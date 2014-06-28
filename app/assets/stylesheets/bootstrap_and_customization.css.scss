@@ -1,18 +1,24 @@
 @import 'bootstrap';
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
 
-$body-bg:                                                   #ecf0f1;
-$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif:                'Open Sans', Arial , Helvetica, Sans-Serif;
 $navbar-height:                                        45px;
 $navbar-default-bg:                          white;
 $navbar-default-brand-color:      #c0392b;
 $brand-primary:                                    #c0392b;
 $jumbotron-bg:                                         white;
+$btn-flat:            red;
 
 @import 'bootstrap';
 
 .center {
      text-align: center;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar-brand {
@@ -36,3 +42,79 @@ $jumbotron-bg:                                         white;
     left: -5px;
     *overflow: hidden;
 }
+
+body {
+  background: url('wallpaper_retro_robot_by_avero-d4sg2dv.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#000;
+    background-color:#fff;
+    font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+}
+
+a:link, a:visited {
+  color:#eee;
+}
+
+.block1 {
+  background-color:rgba(0,0,0,0.07);
+    height:250px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+.block2 {
+  background-color:rgba(0,0,0,0.07);
+    height:250px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+.block-sm {
+    height:180px;
+}
+
+.btn-flat {
+  background-color:rgba(192, 57, 43,1.0);
+    font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+    border-radius:0px;
+    border-width:0;
+    background-image:none;
+    padding:16px;
+    margin:0 auto;
+    margin-top:15px;
+    width:70%;
+    font-size:20pt;
+    vertical-align:middle;
+}
+
+/* mini carousel */
+.carousel-inner img {
+  width:100%;
+    height:100%;
+}
+
+#myCarousel {
+  font-size:90%;
+}
+
+.carousel-controls-mini {
+  margin-left:42%;
+}
+
+.carousel-controls-mini > a {
+  border:1px solid #eee;
+    margin:1px;
+    width:20px;
+    display:block;
+    float:left;
+    text-align:center;
+}
+
+#carousel-bounding-box {
+  margin:0 auto;
+  width:300px;
+}
+

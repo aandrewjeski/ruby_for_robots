@@ -1,13 +1,125 @@
-<div class="jumbotron center">
-     <h1>Welcome to Ruby on Robots!</h1>
-     <% if user_signed_in? %>
-          # do something
-     <% else %>
-       <p>
-         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-       </p>
-  <% end %>
+<div class="container">
+  <div class="row-fluid">
+    <div class="span10 offsetHalf">
+
+    <i class="icon-screenshot icon-5x" style="color:#ee1111;"></i>
+    </div>
+  </div>
+
+  <br><br><br><br>
+  <div class="container"
+  <div class="jumbotron">
+
+        <div class="block1">
+          <div class="pull-center">
+            <center>
+            <br>
+            <h1>Welcome to Ruby for Robots!</h1>
+            <% if user_signed_in? %>
+              # do something
+            <% else %>
+            <p>
+              <div class="row">
+              <div class="col-xs-4">
+                <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-flat" %>
+              </div>
+              <div class="col-xs-4">
+              <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-flat" %>
+              </div>
+            </div>
+            </p>
+            <% end %>
+            </center>
+          </div>
+        </div>
+        <div class="block2">
+          <div class="pull-center">
+          <center>
+          <br>
+          <h1>Learn to code with robots</h1>
+          </center>
+            <br>
+            <div class="col-xs-4">
+            <button class="btn btn-primary btn-flat">Start Here</button>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  <br><br>
+
+<div class="container">
+  <!-- Slider -->
+  <div class="row-fluid">
+    <div class="span9 offsetHalf1" id="slider">
+      <!-- Top part of the slider -->
+      <div class="row-fluid">
+        <div id="carousel-bounding-box">
+          <div id="myCarousel" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item" data-slide-number="0"><img class="img-rounded" src="http://i.imgur.com/Bp3CmzP.jpg"></div>
+              <div class="item" data-slide-number="1"><img class="img-rounded" src="http://imgur.com/5rxQn0x.jpg"></div>
+              <div class="item" data-slide-number="2"><img class="img-rounded" src="http://i.imgur.com/tzuQumV.jpg"></div>
+              <div class="item" data-slide-number="3"><img class="img-rounded" src="http://i.imgur.com/L2Bjowh.jpg"></div>
+            </div>
+
+          </div>
+
+          <!-- Carousel nav -->
+          <div class="carousel-controls-mini">
+              <a href="#myCarousel" data-slide="prev">‹</a>
+              <a href="#myCarousel" data-slide="next">›</a>
+          </div>
+
+        </div>
+
+        <div class="span4" id="carousel-text"></div>
+
+
+        <div style="display:none;" id="slide-content">
+          <div id="slide-content-0">
+            <h5>Slide One</h5>
+            <p>This is mini slider / carousel with Bootstrap. Blah blah, blah, blah blah. Lorem dolor?</p>
+            <small>October 13 2013 - <a href="#">Read more</a></small>
+          </div>
+          <div id="slide-content-1">
+            <h5>Slide Two</h5>
+            <p>Mini carousel with Bootstrap</p>
+            <small>October 15 2013 - <a href="#">Read more</a></small>
+          </div>
+          <div id="slide-content-2">
+            <h5>Slider Three</h5>
+            <p>Facebook-style paged image slider</p>
+            <small>October 19 2013 - <a href="#">Read more</a></small>
+          </div>
+          <div id="slide-content-3">
+            <h5>Slider Four</h5>
+            <p>Lorem Ipsum Dolor</p>
+            <small>October 22 2013 - <a href="#">Read more</a></small>
+          </div>
+          <div id="slide-content-4">
+            <h5>Slider Five</h5>
+            <p>Lorem Ipsum Dolor</p>
+            <small>October 25 2013 - <a href="#">Read more</a></small>
+          </div>
+          <div id="slide-content-5">
+            <h5>Slider Six</h5>
+            <p>Lorem Ipsum Dolor</p>
+            <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div> <!--/Slider-->
+
+
 </div>
+
 
 
