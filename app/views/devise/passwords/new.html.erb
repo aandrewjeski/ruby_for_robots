@@ -5,16 +5,25 @@
     </div>
   </div>
   <div class="panel-body">
+
     <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
       <%= devise_error_messages! %>
 
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, class: "form-control", :autofocus => true %>
+      <div class="col-xs-4">
+        <div class="form-group">
+          <%= f.label :email %>
+          <%= f.email_field :email, class: "form-control", :autofocus => true %>
+        </div>
       </div>
+      <br>
+      <br>
+      <br>
+      <br>
 
+      <div class="checkbox">
       <div class="form-group">
-        <%= f.submit "Send me reset password instructions", class: "btn btn-primary" %>
+        <%= f.submit "Send reset instructions", class: "btn btn-primary" %>
+      </div>
       </div>
     <% end %>
   </div>
