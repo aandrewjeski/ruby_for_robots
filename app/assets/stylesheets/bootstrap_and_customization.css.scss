@@ -60,7 +60,7 @@ a:link, a:visited {
 
 .block1 {
   background-color:rgba(0,0,0,0.07);
-    height:250px;
+    height:500px;
     padding-left:12px;
     padding-right:12px;
 }
@@ -88,6 +88,18 @@ a:link, a:visited {
     width:70%;
     font-size:20pt;
     vertical-align:middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button1 {
+  // margin-left:100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button2 {
+  margin-left:100px;
 }
 
 /* mini carousel */
