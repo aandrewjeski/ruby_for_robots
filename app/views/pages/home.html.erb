@@ -1,60 +1,23 @@
-<div class="container">
-  <div class="row-fluid">
-    <div class="span10 offsetHalf">
+<div class="container container_test">
 
-    <i class="icon-screenshot icon-5x" style="color:#ee1111;"></i>
-    </div>
-  </div>
+  <center><h1>Welcome to Arcade!</h1></center>
 
-  <br><br><br><br>
-  <div class="container"
-    <div class="jumbotron">
-      <div class="block1">
+  <center>
+    <p>
+      <% if user_signed_in? %>
+        <%= link_to 'Account Console', user_path(@user) %>
+      <% else %>
+        <%= link_to 'Sign In', new_user_session_path %>
+        <%= link_to 'Sign Up', new_user_registration_path %>
+      <% end %>
+    </p>
 
-          <center>
-            <br>
-            <h1>Welcome to Ruby for Robots!</h1>
-            <br>
-            <% if user_signed_in? %>
-              # do something
-            <% else %>
-            <p>
-              <div class="row">
-                <div class="button1">
-                  <div class="col-xs-4">
-                    <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-flat" %>
-                  </div>
-                </div>
-                <div class="button1">
-                  <div class="col-xs-4">
-                    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-flat" %>
-                  </div>
-                </div>
+  </center>
 
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1>Learn to code with robots</h1>
-                <br>
-                <div class="button1">
-                  <div class="col-xs-4">
-                    <button class="btn btn-primary btn-flat">Start Here</button>
-                  </div>
-                </div>
-              </div>
-            </p>
-            <% end %>
-          </center>
+</div>
 
-      </div>
-    </div>
-  </div>
-    <br><br>
-
-<div class="container">
   <!-- Slider -->
-  <div class="row-fluid">
+
     <div class="span9 offsetHalf1" id="slider">
       <!-- Top part of the slider -->
       <div class="row-fluid">
@@ -120,10 +83,9 @@
       </div>
 
     </div>
-  </div> <!--/Slider-->
+   <!--/Slider-->
 
 
-</div>
 
 
 
